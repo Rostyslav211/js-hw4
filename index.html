@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка полів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Перевірка полів</h1>
+    <div>
+        <div class="form-group">
+            <label for="field1">Поле 1:</label>
+            <input type="text" id="field1">
+        </div>
+        <div class="form-group">
+            <label for="field2">Поле 2:</label>
+            <input type="text" id="field2">
+        </div>
+        <button onclick="checkFields()">Перевірити</button>
+        <div class="message" id="message"></div>
+    </div>
+
+    <div class="section">
+        <h2>Перевірка суми числових полів</h2>
+        <div class="form-group">
+            <label for="num1">Число 1:</label>
+            <input type="number" id="num1">
+        </div>
+        <div class="form-group">
+            <label for="num2">Число 2:</label>
+            <input type="number" id="num2">
+        </div>
+        <button onclick="checkSum()">Перевірити суму чисел</button>
+        <div class="message" id="numberMessage"></div>
+    </div>
+
+    <div class="section">
+        <h2>Перевірка наявності слова "JavaScript"</h2>
+        <div class="form-group">
+            <label for="textField">Введіть текст:</label>
+            <input type="text" id="textField" placeholder="Введіть текст">
+        </div>
+        <button onclick="checkForJavaScript()">Перевірити текст</button>
+        <div class="message" id="jsMessage"></div>
+    </div>
+
+    <div class="section">
+        <h2>Перевірка числа в діапазоні</h2>
+        <div class="form-group">
+            <label for="numberInput">Введіть число:</label>
+            <input type="number" id="numberInput" placeholder="Введіть число">
+        </div>
+        <button onclick="checkNumber()">Перевірити число</button>
+        <div class="message" id="resultMessage"></div>
+    </div>
+
+    <div class="section">
+        <h2>Перевірка форми</h2>
+        <div class="form-group">
+            <label for="nameInput">Ім'я:</label>
+            <input type="text" id="nameInput">
+        </div>
+        <div class="form-group">
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput">
+        </div>
+        <div class="form-group">
+            <label for="passwordInput">Пароль:</label>
+            <input type="password" id="passwordInput">
+        </div>
+        <button onclick="checkForm()">Перевірити форму</button>
+        <div class="message" id="formMessage"></div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
